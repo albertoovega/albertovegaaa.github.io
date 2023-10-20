@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function saluda() {
+            alert('hola ' + document.getElementById('nombre').value + ' ' + document.getElementById('apellido').value);
+            alert('¿Cómo estás?');
+            alert('Yo bien gracias');
+        }
+        function contras() {
+            usuario = document.getElementById('usuario').value;
+            contra = document.getElementById('contra').value;
+            if (usuario == "vega" && contra == "1234") {
+                window.location.href = "https://www.stumbleguys.com/es";
+            } else {
+                alert('Contraseña o usuario erroneos');
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="">Nombre</label>
+        <input type="text" name="" id="nombre">
+        <label for="">Apellido</label>
+        <input type="text" name="" id="apellido">
+        <button type="button" onclick="saluda()">Click para ser feliz</button>
+    </form>
+<br><br>
+
+    <form action="">
+        <label for="">Usuario</label>
+        <input type="text" name="" id="usuario">
+        <label for="">Contraseña</label>
+        <input type="text" name="" id="contra">
+        <button type="button" onclick="contras()">Iniciar sesion</button>
+    </form>
+
+</body>
+</html>
